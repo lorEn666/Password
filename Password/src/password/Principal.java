@@ -1,12 +1,27 @@
 package password;
 
+import java.util.Scanner;
+
 public class Principal {
 
 	public static void main(String[] args) {
 
-		Password p1 = new Password();
-		System.out.println(p1);
+		Scanner leer = new Scanner(System.in);
+		int tamañoVector, longitudContraseña;
 
+		System.out.println("¿Cuántas contraseñas quiere guardar?");
+		tamañoVector = leer.nextInt();
+
+		Password vContraseña[] = new Password[tamañoVector];
+		boolean vFuerte[] = new boolean[tamañoVector];
+
+		System.out.println("¿Qué longitud desea que tengan las contraseñas?");
+		longitudContraseña = leer.nextInt();
+
+		for (int i = 0; i < vContraseña.length; i++) {
+			vContraseña[i] = new Password(longitudContraseña);
+			vFuerte[i] = vContraseña[i].esFuerte();
+			System.out.println(vContraseña[i].toString());
+		}
 	}
-
 }
