@@ -23,26 +23,20 @@ public class Principal {
 //			vFuerte[i] = vContraseña[i].esFuerte();
 //			System.out.println(vContraseña[i].toString());
 //		}
-		
+
 		int opc;
 		Usuario user = new Usuario();
-				
+
 		do {
 			switch (opc = Menu.despliegaMenu()) {
 			case 1:
-				user.añadirUsuario();
-				System.out.println(user);
+				user.añadirContraseña();
 				break;
 			case 2:
-				break;
-			case 3:
-				break;
-			case 4:
+				user.verTodasContraseñas();
 				break;
 			}
-		} while (opc!=5);
-		
-		
-		
+		} while (opc != 3);
+
 	}
 }

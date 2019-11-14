@@ -9,14 +9,12 @@ public class Menu {
 		int opcionEscogida;
 		
 		do {
-			System.out.println("1- Añadir Usuario");
-			System.out.println("2- Borrar Usuario");
-			System.out.println("3- Editar usuario");
-			System.out.println("4- Ver todos los Usuarios");
-			System.out.println("5- Salir");
+			System.out.println("1- Añadir Contraseña");
+			System.out.println("2- Ver todas las Contraseñas");
+			System.out.println("3- Salir");
 			opcionEscogida = leer.nextInt();
 			return opcionEscogida;
-		} while (opcionEscogida!=5);
+		} while (opcionEscogida!=3);
 	}
 
 }

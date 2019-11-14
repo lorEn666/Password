@@ -11,18 +11,18 @@ public class Password {
 	public Password() {
 		longitud = 8;
 		contraseña = "";
-		generarPassword(longitud);
+		generarPassword();
 
 	}
 
 	public Password(int longitud) {
 		this.longitud = longitud;
 		contraseña = "";
-		generarPassword(longitud);
+		generarPassword();
 
 	}
 
-	private void generarPassword(int longitud) {
+	private void generarPassword() {
 		Random num = new Random();
 		String libreria = "1234567890AaBbCcDdEeFfGgHhIiJjKkLlMmNnÑñOoPpQqRrSsTtUuVvWwXxYyZz";
 
